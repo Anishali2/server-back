@@ -6,6 +6,7 @@
   "scripts": {
     "start": "concurrently \"npx tsc --watch\"  \"nodemon --import=./src/config/register.js  ./dist/bin/www.js \"",
     "dev": "concurrently \"npx tsc --watch\"  \"nodemon --import=./src/config/register.js  ./dist/bin/www.js \"",
+    "build": "husky",
     "migrate": "npx prisma migrate dev",
     "lint-fix": "pnpm eslint --fix",
     "lint": "pnpm eslint",

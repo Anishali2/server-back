@@ -1,7 +1,34 @@
+// {
+//   "compilerOptions": {
+//     "module": "ESNext",
+//     "target": "ES2020",
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "sourceMap": true,
+//     "outDir": "./dist",
+//     "moduleResolution": "Node",
+//     "resolveJsonModule": true,
+//     "declaration": true,
+//     "rootDir": "./src"
+//   },
+
+//   "ts-node": {
+//     "experimentalSpecifierResolution": "node",
+//     "transpileOnly": true,
+//     "esm": true,
+
+//     "require": ["tsconfig-paths/register"]
+//   },
+//   "include": ["./src/**/*", "./prisma/**/*"],
+//   "exclude": ["node_modules", "views"]
+// }
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "CommonJS",
     "target": "ES2020",
+    "lib": ["ES2020"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
@@ -13,14 +40,12 @@
     "declaration": true,
     "rootDir": "./src"
   },
-
   "ts-node": {
     "experimentalSpecifierResolution": "node",
     "transpileOnly": true,
     "esm": true,
-
     "require": ["tsconfig-paths/register"]
   },
   "include": ["./src/**/*", "./prisma/**/*"],
-  "exclude": ["node_modules", "views"]
+  "exclude": ["node_modules", "views", "dist"]
 }
