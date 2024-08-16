@@ -305,3 +305,4 @@ link is not defined
 2024-08-02 17:21:14 error: MongoServerError: E11000 duplicate key error collection: sales.users index: email_1 dup key: { email: null }
 2024-08-02 17:25:03 error: MongoServerError: E11000 duplicate key error collection: sales.users index: email_1 dup key: { email: null }
 2024-08-02 17:26:18 error: MongoServerError: E11000 duplicate key error collection: sales.users index: email_1 dup key: { email: null }
+2024-08-16 16:11:26 error: mongodb connection error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
